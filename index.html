@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meli Sports — sua web rádio de notícias, debates e emoção esportiva.">
+  <title>Meli Sports | Web Rádio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip">
+    <div class="container top-strip__content">
+      <span class="live-dot"></span>
+      <span>SEU ESPORTE. SUA PAIXÃO. SUA RÁDIO.</span>
+      <span class="top-strip__right">MELI SPORTS · WEB RÁDIO</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio" aria-label="Meli Sports - início">
+        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand__text"><strong>MELI</strong><em>SPORTS</em></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio">Início</a>
+        <a class="nav-link" href="#programacao">Programação</a>
+        <a class="nav-link" href="#horarios">Horários</a>
+        <a class="nav-link" href="#cadastro">Cadastro</a>
+      </nav>
+
+      <button class="button button--outline header-login" id="openLogin">Entrar <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__line"></span> A FREQUÊNCIA DO ESPORTE</p>
+          <h1>A EMOÇÃO DO<br>ESPORTE <span>NÃO PARA.</span></h1>
+          <p class="hero__description">Notícias, debates, resenhas e aquela energia de arquibancada. Acompanhe o mundo esportivo com a Meli Sports.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#player"><span class="button__play" aria-hidden="true">▶</span> Ouvir agora</a>
+            <a class="button button--text" href="#programacao">Ver programação <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero__listeners">
+            <div class="listener-avatars" aria-hidden="true"><span>⚽</span><span>🏀</span><span>🏁</span></div>
+            <p><strong>Uma rádio feita para quem vive esporte.</strong><br><span>Chegue junto e faça parte da torcida.</span></p>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Identidade visual esportiva da Meli Sports">
+          <div class="visual-orbit visual-orbit--one"></div>
+          <div class="visual-orbit visual-orbit--two"></div>
+          <div class="visual-ball" aria-hidden="true">⚽</div>
+          <div class="visual-label visual-label--top"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> ESPORTE AO VIVO</div>
+          <div class="visual-label visual-label--bottom"><strong>MS</strong><span>O SOM DA TORCIDA</span></div>
+          <span class="visual-star visual-star--one" aria-hidden="true">✦</span>
+          <span class="visual-star visual-star--two" aria-hidden="true">✦</span>
+        </div>
+      </div>
+      <div class="hero__bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <section class="ticker" aria-label="Temas da rádio">
+      <div class="ticker__track">
+        <span>FUTEBOL</span><b>✦</b><span>BASQUETE</span><b>✦</b><span>FÓRMULA 1</span><b>✦</b><span>NOTÍCIAS</span><b>✦</b><span>DEBATES</span><b>✦</b><span>FUTEBOL</span><b>✦</b><span>BASQUETE</span><b>✦</b><span>FÓRMULA 1</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section section--player" id="player">
+      <div class="container player-layout">
+        <div class="section-heading section-heading--left">
+          <p class="eyebrow"><span class="eyebrow__line"></span> SINTONIZE</p>
+          <h2>ESTÁ NO AR.<br><span>VEM COM A GENTE.</span></h2>
+          <p>Seu ponto de encontro com as principais histórias do esporte.</p>
+        </div>
+
+        <div class="radio-player">
+          <div class="radio-player__top">
+            <div class="radio-cover" aria-hidden="true"><span class="radio-cover__bars"><i></i><i></i><i></i><i></i><i></i></span><strong>MS</strong><small>MELI SPORTS</small></div>
+            <div class="radio-player__info">
+              <span class="live-tag"><span class="live-dot"></span> TRANSMISSÃO</span>
+              <h3>Meli Sports Ao Vivo</h3>
+              <p id="playerStatus" role="status">Pronto para sintonizar</p>
+            </div>
+            <span class="player-signal" aria-hidden="true">〰</span>
+          </div>
+          <div class="radio-player__wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="radio-player__controls">
+            <button class="play-button" id="playButton" aria-label="Reproduzir transmissão"><span id="playIcon" aria-hidden="true">▶</span></button>
+            <div class="player-control-copy"><strong id="playLabel">Ouça a Meli Sports</strong><span>Web rádio · 24 horas de esporte*</span></div>
+            <label class="volume-control" for="volumeControl"><span aria-hidden="true">◖</span><input id="volumeControl" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume da rádio"></label>
+          </div>
+          <audio id="radioAudio" preload="none"></audio>
+          <p class="player-note">*Disponibilidade e grade de transmissão dependem da configuração da rádio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="programacao">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow"><span class="eyebrow__line"></span> NO SEU RITMO <span class="eyebrow__line"></span></p>
+          <h2>PROGRAMAÇÃO <span>QUE JOGA JUNTO.</span></h2>
+          <p>Uma sugestão de grade para você organizar os programas da rádio.</p>
+        </div>
+
+        <div class="schedule-feature">
+          <div class="schedule-feature__number">01</div>
+          <div class="schedule-feature__main"><span class="schedule-feature__tag">DESTAQUE DA GRADE</span><h3>Giro Esportivo</h3><p>As notícias, os resultados e os assuntos que movimentam o dia.</p></div>
+          <div class="schedule-feature__time"><span>SEG A SEX</span><strong>09:00</strong><small>HORÁRIO SUGERIDO</small></div>
+        </div>
+
+        <div class="schedule-grid" id="horarios">
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">☀</span><span class="schedule-card__time">07:00 — 09:00</span></div><h3>Bom Dia, Torcedor</h3><p>Comece o dia por dentro do universo esportivo.</p><span class="schedule-card__days">SEG A SEX</span></article>
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">🎙</span><span class="schedule-card__time">09:00 — 12:00</span></div><h3>Giro Esportivo</h3><p>Informação, destaques e notícias do dia.</p><span class="schedule-card__days">SEG A SEX</span></article>
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">⚡</span><span class="schedule-card__time">12:00 — 14:00</span></div><h3>Meli Sports Debate</h3><p>Opinião, análises e conversa sem enrolação.</p><span class="schedule-card__days">SEG A SEX</span></article>
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">🏟</span><span class="schedule-card__time">15:00 — 18:00</span></div><h3>Arquibancada</h3><p>Paixão de torcedor e histórias de bastidores.</p><span class="schedule-card__days">SEG A SEX</span></article>
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">🥅</span><span class="schedule-card__time">18:00 — 20:00</span></div><h3>Resenha do Jogo</h3><p>O balanço das partidas e os lances do dia.</p><span class="schedule-card__days">SEG A SEX</span></article>
+          <article class="schedule-card"><div class="schedule-card__top"><span class="schedule-card__icon">🌙</span><span class="schedule-card__time">20:00 — 22:00</span></div><h3>Noite de Esportes</h3><p>Fechamento do dia com muita informação.</p><span class="schedule-card__days">SEG A SEX</span></article>
+        </div>
+        <p class="schedule-disclaimer"><span aria-hidden="true">ⓘ</span> Os programas e horários acima são exemplos editáveis. Atualize a grade de acordo com a programação real da Meli Sports.</p>
+      </div>
+    </section>
+
+    <section class="signup-section" id="cadastro">
+      <div class="signup-pattern" aria-hidden="true"></div>
+      <div class="container signup-layout">
+        <div class="signup-copy">
+          <p class="eyebrow"><span class="eyebrow__line"></span> FAÇA PARTE DA TORCIDA</p>
+          <h2>ENTRE PARA O<br><span>TIME MELI SPORTS.</span></h2>
+          <p>Cadastre seu e-mail para demonstrar interesse em receber novidades, programas especiais e notícias da rádio.</p>
+          <div class="signup-benefit"><span aria-hidden="true">✓</span> Novidades da programação</div>
+          <div class="signup-benefit"><span aria-hidden="true">✓</span> Conteúdo esportivo em destaque</div>
+        </div>
+
+        <div class="signup-card">
+          <div class="signup-card__header"><span class="signup-card__icon" aria-hidden="true">✉</span><div><h3>Cadastre-se</h3><p>É rápido e fácil fazer parte.</p></div></div>
+          <form id="signupForm" novalidate>
+            <label for="signupName">Seu nome</label>
+            <input type="text" id="signupName" name="name" placeholder="Como podemos te chamar?" autocomplete="name" required minlength="2">
+            <label for="signupEmail">Seu melhor e-mail</label>
+            <input type="email" id="signupEmail" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+            <label class="checkbox-row"><input type="checkbox" id="consent" required><span>Concordo em demonstrar interesse e entendo que este formulário é uma demonstração, sem envio de dados a um servidor.</span></label>
+            <button type="submit" class="button button--primary button--full">Quero me cadastrar <span aria-hidden="true">→</span></button>
+            <p class="form-message" id="signupMessage" role="status" aria-live="polite"></p>
+          </form>
+          <div class="signup-card__footer">Já tem acesso? <button type="button" class="text-button" id="openLoginInline">Entrar</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand--footer" href="#inicio" aria-label="Meli Sports - voltar ao início"><span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand__text"><strong>MELI</strong><em>SPORTS</em></span></a>
+      <p>O som da torcida. A voz do esporte.</p>
+      <a class="footer-top" href="#inicio">Voltar ao topo ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="currentYear"></span> Meli Sports. Todos os direitos reservados.</span><span>Projeto de estudo em HTML, CSS e JavaScript.</span></div>
+  </footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button type="button" class="modal__close" id="closeLogin" aria-label="Fechar janela">×</button>
+      <span class="modal__icon" aria-hidden="true">↗</span>
+      <p class="eyebrow"><span class="eyebrow__line"></span> BOM TER VOCÊ AQUI</p>
+      <h2 id="loginTitle">ENTRAR NA <span>MELI SPORTS</span></h2>
+      <p class="modal__description">A área de entrada está preparada visualmente. Para autenticar usuários com segurança, é necessário conectar um servidor e um sistema de contas.</p>
+      <form id="loginForm" novalidate>
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+        <label for="loginPassword">Senha</label>
+        <input type="password" id="loginPassword" name="password" placeholder="Digite sua senha" autocomplete="current-password" required minlength="6">
+        <button type="submit" class="button button--primary button--full">Entrar <span aria-hidden="true">→</span></button>
+        <p class="form-message" id="loginMessage" role="status" aria-live="polite"></p>
+      </form>
+      <p class="modal__footnote">Demonstração front-end: não use senhas reais neste formulário.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
